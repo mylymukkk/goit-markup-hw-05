@@ -80,7 +80,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="features section">
@@ -149,6 +151,9 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-text-container">
+                <p class="occupation-item-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="occupation-item">
               <img
@@ -157,6 +162,9 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-text-container">
+                <p class="occupation-item-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="occupation-item">
               <img
@@ -165,6 +173,9 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-text-container">
+                <p class="occupation-item-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -463,5 +474,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-modal" data-modal-close>
+          <svg class="btn-modal-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
